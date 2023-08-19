@@ -1,23 +1,12 @@
-Processor	: ARMv7 Processor rev 0 (v7l)
-processor	: 0
-BogoMIPS	: 38.40
-
-processor	: 1
-BogoMIPS	: 38.40
-
-processor	: 2
-BogoMIPS	: 38.40
-
-processor	: 3
-BogoMIPS	: 38.40
-
-Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt
-CPU implementer	: 0x51
+Processor	: ARMv7 processor rev 1 (v7l)
+BogoMIPS	: 1500.0
+Features	: neon vfp swp half thumb fastmult edsp vfpv3 vfpv4 idiva idivt
+CPU implementer	: 0x69
 CPU architecture: 7
-CPU variant	: 0x2
-CPU part	: 0x06f
-CPU revision	: 0
+CPU variant	: 0x1
+CPU part	: 0x001
+CPU revision	: 1
 
-Hardware	: OMAP4 Panda board
-Revision	: 000a
-Serial		: 0000000000000000
+Hardware	: placeholder
+Revision	: 0001
+Serial		: 0000000000000001
