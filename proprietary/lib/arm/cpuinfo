@@ -1,13 +1,23 @@
-Processor	: ARMv8 processor rev 1 (aarch64)
+Processor	: ARMv7 Processor rev 0 (v7l)
 processor	: 0
+BogoMIPS	: 38.40
+
 processor	: 1
-Features	: fp asimd aes pmull sha1 sha2 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt
-CPU implementer	: 0x4e
-CPU architecture: 8
-CPU variant	: 0x0
-CPU part	: 0x000
+BogoMIPS	: 38.40
+
+processor	: 2
+BogoMIPS	: 38.40
+
+processor	: 3
+BogoMIPS	: 38.40
+
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt
+CPU implementer	: 0x51
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0x06f
 CPU revision	: 0
 
-Hardware	: placeholder
-Revision	: 0000
+Hardware	: OMAP4 Panda board
+Revision	: 000a
 Serial		: 0000000000000000
