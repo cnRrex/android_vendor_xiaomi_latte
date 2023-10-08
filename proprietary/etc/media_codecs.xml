@@ -77,9 +77,6 @@ Only the three quirks included above are recognized at this point:
 
 <MediaCodecs>
     <Decoders>
-        <MediaCodec name="OMX.ffmpeg.ape.decoder" type="audio/x-ape" />
-        <MediaCodec name="OMX.ffmpeg.dsd.decoder"    type="audio/dsd" />
-        <MediaCodec name="OMX.ffmpeg.adpcm.decoder" type="audio/32KADPCM" />
         <MediaCodec name="OMX.Intel.mp3.decoder" type="audio/mpeg" />
         <MediaCodec name="OMX.Intel.amrnb.decoder" type="audio/3gpp" />
         <MediaCodec name="OMX.Intel.amrwb.decoder" type="audio/amr-wb" />
@@ -88,6 +85,7 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.Intel.alac.decoder" type="audio/alac" />
         <MediaCodec name="OMX.Intel.wma.decoder" type="audio/x-ms-wma" />
         <MediaCodec name="OMX.Intel.hw_vd.h264" type="video/avc" >
+            <!-- profiles and levels:  ProfileBaseline : Level51 -->
             <Limit name="size" min="64x64" max="3840x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
@@ -96,6 +94,7 @@ Only the three quirks included above are recognized at this point:
             <Feature name="adaptive-playback" />
         </MediaCodec>
         <MediaCodec name="OMX.Intel.hw_vd.h264.secure" type="video/avc" >
+            <!-- profiles and levels:  ProfileBaseline : Level51 -->
             <Limit name="size" min="64x64" max="3840x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
@@ -112,14 +111,14 @@ Only the three quirks included above are recognized at this point:
             <Limit name="bitrate" range="1-40000000" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
-        <!--MediaCodec name="OMX.Intel.hw_vd.vp9" type="video/x-vnd.on2.vp9" >
+        <MediaCodec name="OMX.Intel.sw_vd.vp9" type="video/x-vnd.on2.vp9" >
             <Limit name="size" min="64x64" max="3840x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" range="1-972000" />
             <Limit name="bitrate" range="1-40000000" />
             <Feature name="adaptive-playback" />
-        </MediaCodec-->
+        </MediaCodec>
         <MediaCodec name="OMX.Intel.hw_vd.h265" type="video/hevc" >
             <Limit name="size" min="64x64" max="3840x2160" />
             <Limit name="alignment" value="2x2" />
@@ -189,4 +188,7 @@ Only the three quirks included above are recognized at this point:
     </Encoders>
     <Include href="media_codecs_google_video.xml" />
     <Include href="media_codecs_google_audio.xml" />
+    <Settings>
+        <Setting name="max-video-encoder-input-buffers" value="9" />
+    </Settings>
 </MediaCodecs>
